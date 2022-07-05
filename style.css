@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-variant: small-caps;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  border: 5px double #d37817;
+  text-align: center;
+}
+
+#header {
+  margin: 1rem auto 2rem auto;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 1.4rem;
+  border-radius: 10px;
+  outline: none;
+  border-color: #d37817;
+  transition: 0.5s;
+}
+
+#message {
+  width: 70%;
+  height: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 1.4rem;
+  border-color: #d37817;
+  transition: 0.5s;
+}
+
+input:focus,
+#message:focus {
+  border: 2.5px solid #d37817;
+  border-left: 15px solid #d37817;
+  outline: none;
+}
+
+#btn {
+  margin-bottom: 1.4rem;
+  width: 70%;
+  padding: 10px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  font-size: larger;
+  color: #fff;
+  background-color: #d37817;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#btn:hover {
+  background-color: #aa5f0f;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#btn:active {
+  background-color: #d37817;
+}
+
+@media (max-width: 900px) {
+    #form{
+        width: 100%;
+        height: 100vh;
+    }
+}
