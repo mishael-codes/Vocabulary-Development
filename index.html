@@ -3,57 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="Pronunciation class, english, english class, learn english
-    speak english, english pronunciatons, english pronunciation, class, classes">
-    <meta name="author" content="Grace Enyi, Grayseeh">
-    <meta name="description" content="Book a class with an english instructor on how to speak and write better.">
+    <meta
+      name="keywords"
+      content="Pronunciation class, english, english class, learn english
+    speak english, english pronunciatons, english pronunciation, class, classes"
+    />
+    <meta name="author" content="Grace Enyi, Grayseeh" />
+    <meta
+      name="description"
+      content="Book a class with an english instructor on how to speak and write better."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book A Class - Vocabulary Development</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-        <form action="https://formsubmit.co/grayseeh67@gmail.com" method="post" id="form">
-            <header id="header">
-                <h1>
-                  Vocabulary Development <br>-</h1>
-                  <h3>Book your 1-on-1 course</h3>
-            </header>
-            <input
-              type="text"
-              name="First_Name"
-              id="first_name"
-              placeholder="Your First Name"
-              required
-            />
-            <input
-              type="text"
-              name="Last_Name"
-              id="last_name"
-              placeholder="Your Last Name"
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Your email address"
-              required
-            />
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Leave A Note"
-              required
-            ></textarea>
-            <input
-              type="hidden"
-              name="_subject"
-              value="Vocabulary Development - New Registration"
-            />
-            <input type="hidden" name="_next" value="https://msha.ke/grayseeh" />
-      
-            <button id="btn" type="submit">Register</button>
-          </form>
+      <form
+        action="https://formsubmit.co/grayseeh67@gmail.com"
+        method="post"
+        id="form"
+      >
+        <header id="header">
+          <h1>Vocabulary Development <br />-</h1>
+          <h3>Book your 1-on-1 course</h3>
+        </header>
+        <input
+          type="text"
+          name="First_Name"
+          id="first_name"
+          placeholder="Your First Name"
+          required
+        />
+        <input
+          type="text"
+          name="Last_Name"
+          id="last_name"
+          placeholder="Your Last Name"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email address"
+          required
+        />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Leave A Note"
+          required
+        ></textarea>
+        <input
+          type="hidden"
+          name="_subject"
+          value="Vocabulary Development - New Registration"
+        />
+        <input type="hidden" name="_next" value="https://msha.ke/grayseeh" />
+
+        <button id="btn" type="submit">Register</button>
+      </form>
     </div>
+    <script>
+      let btn = document.getElementById("btn");
+
+      btn.addEventListener("submit", () => {
+        alert(
+          "This form has been submitted successfully. \n You will now bw taken back to the home page."
+        );
+      });
+    </script>
   </body>
 </html>
