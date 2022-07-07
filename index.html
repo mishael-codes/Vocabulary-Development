@@ -23,6 +23,7 @@
         action="https://formsubmit.co/grayseeh67@gmail.com"
         method="post"
         id="form"
+        onsubmit="submitForm()"
       >
         <header id="header">
           <h1>Vocabulary Development <br />-</h1>
@@ -61,19 +62,17 @@
         />
         <input type="hidden" name="_next" value="https://msha.ke/grayseeh" />
 
-        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_captcha" value="false" />
 
         <button id="btn" type="submit">Register</button>
       </form>
     </div>
     <script>
-      let btn = document.getElementById("btn");
-
-      btn.addEventListener("click", () => {
+      function submitForm() {
         alert(
           "Thank you for booking a course, You will receive a reply via email shortly!"
         );
-      });
+      }
     </script>
   </body>
 </html>
